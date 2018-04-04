@@ -1,0 +1,298 @@
+:root {
+    --main-bg-color: #000000;
+    /* --main-color: #FD5E0F; */
+    --main-color: #ff8f5c;
+    --second-color: #ffffff;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--second-color);
+}
+
+h1 {
+    color: var(--main-color);
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    margin: 10px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+strong {
+    color: var(--main-color);
+    white-space: nowrap;
+}
+
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.page {
+    min-height: 100vh;
+    outline: none;
+    padding: 50px 0px 50px 0px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+/* ### NAV BAR ### */
+
+.navbar-section {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    border-bottom: 2px solid var(--main-color);
+    background: #000000c2;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
+.navbar-section>a.btn {
+    height: 1rem;
+}
+
+.btn.btn-link {
+    color: var(--second-color);
+}
+
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+    color: var(--main-color);
+    box-shadow: none;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+/* ### BUTTON ### */
+
+.btn-primary {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: transparent;
+    border-radius: .1rem;
+    border: .05rem solid var(--second-color);
+    color: var(--second-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8rem;
+    line-height: 1rem;
+    outline: 0;
+    padding: .35rem .4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 15px 30px 15px 30px;
+}
+
+.btn-skills {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: transparent;
+    border-radius: .1rem;
+    border: .05rem solid var(--second-color);
+    color: var(--second-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8rem;
+    line-height: 1rem;
+    outline: 0;
+    padding: .35rem .4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 3px 3px 0px 0px;
+    padding: 5px 7px 5px 7px;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+    background: var(--main-color);
+    border-color: var(--second-color);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.btn-skills:focus,
+.btn-skills:hover {
+    background: var(--main-color);
+    border-color: var(--second-color);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+/* ### HOME ### */
+
+#home {
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    background: url(/img/bg-home.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#home>div {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.text {
+    position: relative;
+    z-index: 1;
+    font-size: 32pt;
+    line-height: 36pt;
+}
+
+/*  ### ABOUT ###  */
+
+#about {
+    background-color: var(--second-color);
+    background: url(/img/bg-about.png) no-repeat center center fixed;
+    background-size: 100%;
+    justify-content: center;
+    padding: 50px 20px 50px 20px;
+}
+
+.skills {
+    margin: 10px 10px 30px 10px;
+}
+
+/*  ### WORKS ###  */
+
+#works {
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    background: url(/img/bg-works.png) no-repeat left center fixed;
+    background-size: 150%;
+}
+
+.card {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 20px 20px 20px 20px;
+    background: var(--main-bg-color);
+    border: 0.05rem solid var(--main-color);
+    border-radius: .1rem;
+    color: var(--second-color);
+}
+
+.card-image>img {
+    padding: 5px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card-footer>a {
+    position: absolute;
+    bottom: 11px;
+    left: 35%;
+}
+
+/*  ### CONTACT ###  */
+
+#contact {
+    background-color: var(--second-color);
+    justify-content: center;
+}
+
+.avatar.avatar-xl {
+    font-size: 1.6rem;
+    height: 10.2rem;
+    width: 10.2rem;
+}
+
+.panel {
+    background-color: var(--main-bg-color);
+    margin: 20px;
+    min-width: 300px;
+    border: none;
+}
+
+.panel-header {
+    text-align: center;
+}
+
+.network {
+    margin: 30px 0px 0px 0px;
+}
+
+.network>a {
+    color: var(--second-color);
+    margin: 10px;
+}
+
+.network>a:hover {
+    color: var(--main-color);
+}
+
+.panel-footer {
+    text-align: center;
+}
+
+/* ### FOOTER ### */
+
+.footer {
+    position: relative;
+}
+
+.footnote {
+    height: 50px;
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.fa-angle-double-up {
+    color: var(--main-color);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+}

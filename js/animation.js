@@ -3,7 +3,7 @@ $(window).scroll(function () {
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
 
-        $(this).css('opacity', '0');
+        // $(this).css('opacity', '0'); //Not working well with safari and firefox
 
         if (imagePos < topOfWindow + 500) {
             $('.about-me').addClass(' animated fadeInLeft');

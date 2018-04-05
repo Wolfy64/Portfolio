@@ -186,7 +186,7 @@ a:hover {
 
 #about {
     background-color: var(--second-color);
-    background: url(/img/bg-about.png) no-repeat center center fixed;
+    background: url(/img/bg-about.jpg) no-repeat center center fixed;
     background-size: 100%;
     justify-content: center;
     padding: 50px 20px 50px 20px;

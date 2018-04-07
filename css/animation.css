@@ -17,3 +17,7 @@
     background-repeat: no-repeat;
     animation: animatedBackground 6s linear 1;
 }
+
+.fade{
+    display: none;
+}

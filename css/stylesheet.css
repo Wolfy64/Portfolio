@@ -162,7 +162,6 @@ a:hover {
     align-items: center;
     background-color: var(--main-bg-color);
     background: url(/img/bg-home.png) no-repeat center center fixed;
-    /* background: url(/img/bg-home.png) no-repeat fixed; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
